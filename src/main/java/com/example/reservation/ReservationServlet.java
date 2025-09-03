@@ -79,6 +79,9 @@ public class ReservationServlet extends HttpServlet {
 				rd.forward(req, resp);
 				return;
 			}
+			
+			
+			
 			if (reservationTimeString == null || reservationTimeString.isEmpty()) {
 				req.setAttribute("errorMessage", "希望日時は必須です。");
 				RequestDispatcher rd = req.getRequestDispatcher("/index.jsp");
